@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>Formulario com autocomplete</p>
+    <form autocomplete="on">
+      <input type="text" name="email" />
+    </form>
+    <p>
+      Formulario com Action que especifica para onde os dados do formulario
+      serão enviados.<br />
+      Normalmente é o link de uma página do servidor
+    </p>
+    <form
+      action="https://www.nosso-servidor.com.br/cadastro/usuario.php"></form>
+
+    <p>Especifica o método do HTTP que será utilizado para a submissão (get ou post):</p>
+    <form action="https://www.nosso-servidor.com.br/cadastro/usuario.php" method="post"</form>
+    
+      <p>Radio Button</p>
+      <form>
+        <input type="radio" name="sexo" checked="checked"/>Homem
+        <input type="radio" name="sexo"/>Mulher
+      </form>
+
+      <p>Checkbox</p>
+      <p>Escolhas quantas cores você deseja.</p>
+      <input type="checkbox" name="cor1">Azul
+      <input type="checkbox" name="cor2">Vermelho
+      <input type="checkbox" name="cor3">Amarelo 
+      <br><br> 
+      
+      <input type="date"><br><br>
+      <input type="range" min="5" max="25">
+      <br><br>
+      <input type="color">
+      <br><br>
+      <input type="file">
+      <br><br>
+      <input type="button" value="Botão">
+      <br><br>
+      <p>Select e Datalist</p>
+      <h3>Select</h3>
+      <select>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">Javascript</option>
+      </select>
+      <h3>Datalist</h3>
+      <input list="browser" name="browser">
+      <datalist id="browser">
+        <option value="internet explorer"></option>
+        <option value="chrome"></option>
+        <option value="firefox"></option>
+      </datalist>
+      <br><br>
+      <h3>FIELDSET e  LEGEND</h3>
+      <fieldset>
+        <legend>cadastro</legend>
+        Nome: <input type="text" name="nome"><br>
+        email: <input type="email" name="e-mail">
+      </fieldset>
+    </body>
+</html>
